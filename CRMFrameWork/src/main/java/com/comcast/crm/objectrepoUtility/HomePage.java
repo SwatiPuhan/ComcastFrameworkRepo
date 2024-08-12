@@ -16,6 +16,13 @@ public class HomePage
 		PageFactory.initElements(driver ,this);
 	}
 	
+	@FindBy(xpath = "//a[text()='Products']")
+	private WebElement productLink;
+	
+	public WebElement getProductLink() {
+		return productLink;
+	}
+
 	@FindBy(xpath = "//a[text()='Sign Out']")
 	private WebElement signOutLink;
 	
